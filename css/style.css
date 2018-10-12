@@ -1,0 +1,220 @@
+@import url("https://fonts.googleapis.com/css?family=Roboto:300,400,700");
+
+body {
+  font-family: Roboto;
+}
+
+.ba-background {
+  background: url(../img/bg_tо.jpeg) no-repeat;
+  background-size: cover;
+}
+
+/* .ba-header { */
+/* display: flex; */
+/* justify-content: space-between; */
+/* } */
+
+/* Layout */
+.ba-container {
+  max-width: 790px;
+  /* padding-right: 20px; */
+  /* padding-top: 20px; */
+}
+
+/* Typography */
+a,
+input[type="submit"],
+input[type="button"],
+button {
+  transition: color 0.3s ease-in, border-color 0.3s ease-in,
+    background-color 0.3s ease-in, opacity 0.3s ease-in;
+}
+
+input[type="submit"],
+input[type="button"],
+button,
+.ba-button {
+  display: inline-block;
+}
+
+input[type="submit"]:hover,
+input[type="button"]:hover,
+button:hover,
+.ba-button:hover {
+}
+
+input[type="text"],
+input[type="email"],
+input[type="password"],
+input[type="number"],
+input[type="tel"],
+textarea,
+select {
+  transition: color 0.3s ease-in, border-color 0.3s ease-in,
+    background-color 0.3s ease-in, opacity 0.3s ease-in;
+}
+
+input[type="text"]:focus,
+input[type="email"]:focus,
+input[type="password"]:focus,
+input[type="number"]:focus,
+input[type="tel"]:focus,
+textarea:focus,
+select:focus {
+}
+
+textarea {
+}
+
+/* header */
+
+.ba-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.ba-header__menu {
+  display: flex;
+  list-style: none;
+  color: #ffffff;
+  margin-right: -200px;
+}
+.ba-header__item + .ba-header__item {
+  margin-left: 45px;
+}
+
+.ba-header__logo {
+  width: 40px;
+  height: 14px;
+}
+
+.ba-header__item a {
+  color: #ffffff;
+  text-decoration: none;
+  text-transform: uppercase;
+  font-size: 12px;
+  font-weight: 300;
+}
+.ba-header__item a:hover {
+  border-bottom: 1px #ffffff solid;
+}
+
+.ba-pop-up {
+  background-color: #ffffff;
+  box-shadow: 46px 0 0 -20px rgba(225, 225, 225, 0.5),
+    -46px 0 0 -20px rgba(225, 225, 225, 0.5),
+    23px 0 0 -10px rgba(225, 225, 225, 0.5),
+    -23px 0 0 -10px rgba(225, 225, 225, 0.5);
+}
+
+/* CART */
+.ba-cart {
+  margin: 30px 25px 75px 40px;
+}
+
+.ba-cart__new {
+  background-color: #ffa60d;
+  color: #ffffff;
+  text-transform: uppercase;
+  padding: 5px;
+  font-size: 14px;
+  font-weight: normal;
+}
+.ba-cart__title {
+  font-size: 24px;
+  text-transform: uppercase;
+  font-weight: 400;
+}
+
+.ba-cart__title span {
+  color: #5e4fff;
+}
+
+.ba-cart__rating {
+  font-size: 12px;
+  font-weight: 700;
+}
+
+.ba-cart__price {
+  font-size: 22px;
+  font-weight: 300;
+}
+
+fieldset {
+  border: 0px;
+}
+
+.ba-cart__size {
+  /* display: flex; */
+  /* justify-content: space-between; */
+  /* flex-direction: row; */
+}
+.ba-cart__size input {
+  display: none;
+}
+
+.ba-cart__size label:checked {
+  border: 15px #000000 solid;
+  color: red;
+  padding: 5px;
+}
+.ba-cart__size label:hover {
+  cursor: pointer;
+}
+
+.ba-cart__buttons {
+  display: flex;
+  flex-direction: column;
+}
+.ba-cart__buttons button {
+  text-align: center;
+  font-size: 12px;
+  text-transform: uppercase;
+}
+.ba-cart__buttons button:first-child {
+  padding: 10px 26px;
+  color: #ffffff;
+  background-color: #a200b8;
+  border: none;
+  margin-bottom: 10px;
+}
+.ba-cart__buttons button:first-child:hover {
+  color: #000000;
+  background-color: #ffffff;
+  border: 1px #000000 solid;
+}
+.ba-cart__buttons button:nth-child(2) {
+  padding: 10px 36px;
+  border: 1px #000000 solid;
+  color: #000000;
+  background-color: #ffffff;
+}
+.ba-cart__buttons button:nth-child(2):hover {
+  color: #ffffff;
+  background-color: #a200b8;
+  border: none;
+  padding: 11px 37px;
+}
+.ba-pop-up {
+  display: flex;
+  /* background: url(../img/) no-repeat; */
+  background-size: cover;
+}
+
+.ba-sneakers {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  background-color: #f4f4f4;
+}
+.ba-sneakers > img {
+  margin: 20px 44px;
+}
+.ba-sneakers__galery {
+  display: flex;
+  justify-content: center;
+  margin-bottom: 20px;
+}
+.ba-sneakers__link + .ba-sneakers__link {
+  margin-left: 18px;
+}
