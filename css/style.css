@@ -40,8 +40,7 @@ button,
 input[type="submit"]:hover,
 input[type="button"]:hover,
 button:hover,
-.ba-button:hover {
-}
+.ba-button:hover {}
 
 input[type="text"],
 input[type="email"],
@@ -60,11 +59,9 @@ input[type="password"]:focus,
 input[type="number"]:focus,
 input[type="tel"]:focus,
 textarea:focus,
-select:focus {
-}
+select:focus {}
 
-textarea {
-}
+textarea {}
 
 /* header */
 
@@ -73,13 +70,15 @@ textarea {
   justify-content: space-between;
   align-items: center;
 }
+
 .ba-header__menu {
   display: flex;
   list-style: none;
   color: #ffffff;
   margin-right: -200px;
 }
-.ba-header__item + .ba-header__item {
+
+.ba-header__item+.ba-header__item {
   margin-left: 45px;
 }
 
@@ -95,6 +94,7 @@ textarea {
   font-size: 12px;
   font-weight: 300;
 }
+
 .ba-header__item a:hover {
   border-bottom: 1px #ffffff solid;
 }
@@ -120,6 +120,7 @@ textarea {
   font-size: 14px;
   font-weight: normal;
 }
+
 .ba-cart__title {
   font-size: 24px;
   text-transform: uppercase;
@@ -144,20 +145,31 @@ fieldset {
   border: 0px;
 }
 
+.ba-cart__size,
+.ba-cart__buttons {
+  margin-left: 0;
+  padding-left: 0;
+}
+
 .ba-cart__size {
   /* display: flex; */
   /* justify-content: space-between; */
   /* flex-direction: row; */
 }
+
 .ba-cart__size input {
   display: none;
 }
 
-.ba-cart__size label:checked {
-  border: 15px #000000 solid;
-  color: red;
-  padding: 5px;
+input[type="radio"]:checked+span {
+  border: 1px solid #000000;
 }
+
+.ba-cart__size span {
+  display: inline-block;
+  padding: 5px 20px;
+}
+
 .ba-cart__size label:hover {
   cursor: pointer;
 }
@@ -166,11 +178,13 @@ fieldset {
   display: flex;
   flex-direction: column;
 }
+
 .ba-cart__buttons button {
   text-align: center;
   font-size: 12px;
   text-transform: uppercase;
 }
+
 .ba-cart__buttons button:first-child {
   padding: 10px 26px;
   color: #ffffff;
@@ -178,23 +192,27 @@ fieldset {
   border: none;
   margin-bottom: 10px;
 }
+
 .ba-cart__buttons button:first-child:hover {
   color: #000000;
   background-color: #ffffff;
   border: 1px #000000 solid;
 }
+
 .ba-cart__buttons button:nth-child(2) {
   padding: 10px 36px;
   border: 1px #000000 solid;
   color: #000000;
   background-color: #ffffff;
 }
+
 .ba-cart__buttons button:nth-child(2):hover {
   color: #ffffff;
   background-color: #a200b8;
   border: none;
   padding: 11px 37px;
 }
+
 .ba-pop-up {
   display: flex;
   /* background: url(../img/) no-repeat; */
@@ -207,14 +225,17 @@ fieldset {
   justify-content: center;
   background-color: #f4f4f4;
 }
-.ba-sneakers > img {
-  margin: 20px 44px;
+
+.ba-sneakers>img {
+  /* margin: 20px 44px; */
 }
+
 .ba-sneakers__galery {
   display: flex;
   justify-content: center;
-  margin-bottom: 20px;
+  /* margin-bottom: 20px; */
 }
-.ba-sneakers__link + .ba-sneakers__link {
+
+.ba-sneakers__link+.ba-sneakers__link {
   margin-left: 18px;
 }
